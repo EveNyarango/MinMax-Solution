@@ -14,4 +14,16 @@ class MaxDiffKataTest {
 
     }
 
+    @Test
+    void checkIfTheArrayIsEmpty(){
+        //given
+        int[] arr = new int[0];
+        //when
+        int actual = MaxDiffKata.maxDiff(arr);
+        //then
+        assertEquals(0,actual);
+
+    }
+
+
 }
